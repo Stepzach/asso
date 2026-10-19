@@ -84,7 +84,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #425d72; outline-offs
 .trip-route p { position: absolute; top: 56.15vw; left: 5.4%; width: 13.2%; font-size: 1.6vw; line-height: 1.2; }
 .trip-photo { position: absolute; top: 15.53vw; left: 40%; width: 60%; height: 36.56vw; }
 .trip-map-frame { position: absolute; top: 37.45vw; left: 19.6%; width: 19.6%; height: 20.62vw; overflow: hidden; }
-.trip-map { position: absolute; top: -3.11vw; left: -5.38vw; width: 39.83vw; height: 39.31vw; max-width: none; object-fit: fill; }
+.trip-map { position: absolute; top: -3.11vw; right: -5.38vw; width: 39.83vw; height: 39.31vw; max-width: none; object-fit: cover; }
 .trip-more { position: absolute; top: 59.2vw; right: 2.9%; font-size: 1.6vw; }
 
 /* 05 — Donations */
@@ -150,13 +150,13 @@ a:focus-visible, button:focus-visible { outline: 2px solid #425d72; outline-offs
 .outdoors-photo, .parcels-frame { top: calc(41.61 * var(--fit-desktop)); height: calc(20.5 * var(--fit-desktop)); }
 .parcels-photo { top: calc(-3.11 * var(--fit-desktop)); height: calc(23.57 * var(--fit-desktop)); }
 .trip-duration { top: calc(16.1 * var(--fit-desktop)); font-size: calc(3.03 * var(--fit-desktop)); }
-.trip-intro { top: calc(28.5 * var(--fit-desktop)); font-size: calc(1.85 * var(--fit-desktop)); }
-.trip-route h3 { top: calc(40.8 * var(--fit-desktop)); font-size: calc(2.69 * var(--fit-desktop)); }
-.trip-route p { top: calc(56.15 * var(--fit-desktop)); font-size: calc(1.6 * var(--fit-desktop)); }
+.trip-intro { top: calc(26 * var(--fit-desktop)); font-size: calc(1.85 * var(--fit-desktop)); }
+.trip-route h3 { top: calc(40.8 * var(--fit-desktop)); font-size: calc(2.3 * var(--fit-desktop)); }
+.trip-route p { top: calc(51.15 * var(--fit-desktop)); font-size: calc(1.6 * var(--fit-desktop)); }
 .trip-photo { top: calc(15.53 * var(--fit-desktop)); height: calc(36.56 * var(--fit-desktop)); }
 .trip-map-frame { top: calc(37.45 * var(--fit-desktop)); height: calc(20.62 * var(--fit-desktop)); }
 .trip-map { top: calc(-3.11 * var(--fit-desktop)); height: calc(39.31 * var(--fit-desktop)); }
-.trip-more { top: calc(59.2 * var(--fit-desktop)); font-size: calc(1.6 * var(--fit-desktop)); }
+.trip-more { top: calc(55.2 * var(--fit-desktop)); font-size: calc(1.6 * var(--fit-desktop)); }
 .donation-title { top: calc(8.22 * var(--fit-desktop)); font-size: calc(4.2 * var(--fit-desktop)); }
 .donation-info { top: calc(20.32 * var(--fit-desktop)); }
 .donation-amount { font-size: calc(4.88 * var(--fit-desktop)); margin-bottom: calc(3.5 * var(--fit-desktop)); }
@@ -246,7 +246,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #425d72; outline-offs
   .entry-school h3 { top: 59%; left: 8%; width: 39%; text-align: right; }
   .entry-fun h3 { top: 79%; left: 48.45%; width: 49%; }
   .meals-photo { top: 30%; left: 0; width: 66%; height: 25%; object-position: center; }
-  .outdoors-photo { top: 56%; left: 52.64%; width: 47.36%; height: 23%; }
+  .outdoors-photo { top: 57%; left: 52.64%; width: 47.36%; height: 20%; }
   .parcels-frame { top: 74%; left: 0; width: 44%; height: 19%; }
   .parcels-photo { top: 0; left: 0; width: 140%; height: 100%; max-width: none; object-fit: cover; }
 
@@ -255,8 +255,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid #425d72; outline-offs
   .trip-duration, .trip-more { display: none; }
   .trip-intro { top: 25%; left: 6.95%; width: 85%; font-size: clamp(14px, 3.65vw, 28px); line-height: 1.28; }
   .trip-photo { top: 43%; left: 14.53%; width: 85.47%; height: 29%; }
-  .trip-map-frame { top: 73%; left: 3%; width: 43%; height: 22%; overflow: hidden; }
-  .trip-map { inset: 0; width: 100%; height: 100%; max-width: none; object-fit: contain; }
+  .trip-map-frame { top: 74%; left: 3%; width: 43%; height: 22%; overflow: hidden; }
+  .trip-map { inset: 0; width: 100%; height: 100%; max-width: none; object-fit: contain; scale: 2.5; }
   .trip-route h3 { top: 75%; left: 51%; width: 46%; font-size: clamp(26px, 6vw, 46px); line-height: .95; }
   .trip-route p { top: 86%; left: 51%; width: 43%; margin: 0; font-size: clamp(13px, 3.4vw, 26px); line-height: 1.17; }
 
