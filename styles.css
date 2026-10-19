@@ -332,3 +332,94 @@ a:focus-visible, button:focus-visible { outline: 2px solid #425d72; outline-offs
   .trip-route h3 { top: 74%; left: 49%; width: 49%; font-size: 19px; line-height: 1.05; }
   .trip-route p { top: 86%; left: 49%; width: 49%; font-size: 12px; line-height: 1.16; }
 }
+
+/* Disable scroll snapping on smaller screens only */
+@media (max-width: 850px) {
+  html {
+    scroll-snap-type: none;
+  }
+
+  .screen {
+    scroll-snap-align: none;
+    scroll-snap-stop: normal;
+  }
+}
+/* Slightly larger text on smaller screens */
+@media (max-width: 850px) and (min-height: 601px) {
+
+  /* Main section headings */
+  .section-heading {
+    font-size: clamp(26px, 5.7vw, 45px);
+  }
+
+  /* Home */
+  .home-title {
+    font-size: clamp(29px, 6.4vw, 47px);
+  }
+
+  .home-subtitle {
+    font-size: clamp(16px, 3.9vw, 31px);
+  }
+
+  .home-description {
+    font-size: clamp(15px, 4vw, 30px);
+  }
+
+  .home-since {
+    font-size: clamp(28px, 5.8vw, 45px);
+  }
+
+  /* Projects */
+  .projects-description {
+    font-size: clamp(15px, 4vw, 30px);
+  }
+
+  .projects-registration span {
+    font-size: clamp(20px, 4.4vw, 33px);
+  }
+
+  /* Actions */
+  .action-entry h3 {
+    font-size: clamp(25px, 6.4vw, 49px);
+  }
+
+  /* Trips */
+  .trip-intro {
+    font-size: clamp(15px, 4vw, 30px);
+  }
+
+  .trip-route h3 {
+    font-size: clamp(27px, 6.4vw, 49px);
+  }
+
+  .trip-route p {
+    font-size: clamp(14px, 3.7vw, 28px);
+  }
+
+  /* Donations */
+  .donation-title {
+    font-size: clamp(31px, 7.9vw, 64px);
+  }
+
+  .donation-question {
+    font-size: clamp(16px, 3.8vw, 29px);
+  }
+
+  .donation-list {
+    font-size: clamp(20px, 4.5vw, 35px);
+  }
+
+  .donation-cta {
+    font-size: clamp(14px, 3.3vw, 24px);
+  }
+
+  /* Contact */
+  .contact-intro {
+    font-size: clamp(18px, 4.6vw, 36px);
+  }
+
+  .social-links,
+  .contact-support {
+    font-size: clamp(19px, 4.5vw, 34px);
+  }
+}
