@@ -3,12 +3,23 @@
   Image positioning deliberately reaches (and sometimes bleeds into) the viewport edges.
   Desktop artboard: 1190 × 841. Smaller-screen artboard: 708 × 1190.
 */
+
+
+@font-face {
+  font-family: 'Nonos Handwriting';
+  src: url('./Nonos-Handwritting.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 :root {
   --ink: #171717;
   --muted: #555;
   --serif: 'Newsreader', Georgia, 'Times New Roman', serif;
   --sans: 'Nunito', Arial, sans-serif;
-  --script: 'Caveat', 'Segoe Print', 'Comic Sans MS', cursive;
+ --script: 'Nonos Handwriting', cursive;
 }
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 0; scroll-snap-type: y mandatory; }
