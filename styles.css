@@ -19,7 +19,9 @@ a { color: inherit; }
 a:focus-visible, button:focus-visible { outline: 2px solid #425d72; outline-offset: 5px; }
 .skip-link { position: fixed; top: -5rem; left: 1rem; z-index: 200; background: #fff; border: 1px solid #aaa; padding: 12px; font: 600 14px var(--sans); }
 .skip-link:focus { top: 1rem; }
-.site-header { position: fixed; z-index: 100; inset: 0 0 auto; height: 6.65vw; min-height: 72px; padding: 2.9vw 5.05vw 0; display: flex; align-items: flex-start; justify-content: space-between; background: #fff; font-family: var(--sans); }
+.site-header { position: fixed; z-index: 100; inset: 0 0 auto;     height: 4.65vw;
+    min-height: 72px;
+    padding: 1.9vw 5.05vw 0; display: flex; align-items: flex-start; justify-content: space-between; background: #fff; font-family: var(--sans); }
 .brand { white-space: nowrap; font-size: clamp(13px, 1.26vw, 18px); line-height: 1.25; text-decoration: none; }
 .desktop-nav { display: flex; align-items: center; gap: 1.15vw; font-size: clamp(12px, 1.09vw, 16px); line-height: 1.4; }
 .desktop-nav a { text-decoration: none; color: #555; white-space: nowrap; }
