@@ -92,7 +92,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #425d72; outline-offs
 .trip-duration { position: absolute; top: 16.1vw; left: 5.2%; margin: 0; font: 400 3.03vw/1.21 var(--serif); letter-spacing: -.025em; }
 .trip-intro { position: absolute; top: 28.5vw; left: 5.34%; width: 29.5%; margin: 0; font-size: 1.85vw; line-height: 1.22; }
 .trip-route h3 { position: absolute; top: 40.8vw; left: 5.4%; margin: 0; font-size: 2.69vw; }
-.trip-route p { position: absolute; top: 56.15vw; left: 5.4%; width: 13.2%; font-size: 1.6vw; line-height: 1.2; }
+.trip-route p { position: absolute; top: 56.15vw; left: 5.4%; width: 13.2%; font-size: 1.6vw; line-height: 1.2; font-weight:300; }
 .trip-photo { position: absolute; top: 15.53vw; left: 40%; width: 60%; height: 36.56vw; }
 .trip-map-frame { position: absolute; top: 37.45vw; left: 19.6%; width: 19.6%; height: 20.62vw; overflow: hidden; }
 .trip-map {     position: absolute;
@@ -109,7 +109,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #425d72; outline-offs
 .donation-title { position: absolute; top: 8.22vw; left: 5.03%; margin: 0; font-size: 4.2vw; }
 .donation-info { position: absolute; top: 20.32vw; left: 5.28%; }
 .donation-amount { margin: 0 0 3.5vw; font-size: 4.88vw; line-height: 1; }
-.donation-question { font-size: 1.6vw; margin: 0 0 3.6vw; width: 40%; }
+.donation-question {  font-size: 1.85vw; margin: 0 0 3.6vw; width: 40%; line-height: 1.22;}
 .donation-list { font-size: 2.02vw; line-height: 1.19; padding-left: 2.4vw; margin: 0; }
 .donation-list li { padding-left: .3vw; }
 .donation-volunteers { position: absolute; top: 15.80vw; left: 30.34%; width: 21.60%; height: 29.75vw; }
@@ -178,7 +178,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #425d72; outline-offs
 .donation-title { top: calc(8.22 * var(--fit-desktop)); font-size: calc(4.2 * var(--fit-desktop)); }
 .donation-info { top: calc(20.32 * var(--fit-desktop)); }
 .donation-amount { font-size: calc(4.88 * var(--fit-desktop)); margin-bottom: calc(3.5 * var(--fit-desktop)); }
-.donation-question { font-size: calc(1.6 * var(--fit-desktop)); margin-bottom: calc(3.6 * var(--fit-desktop)); }
+.donation-question {  font-size: calc(1.85 * var(--fit-desktop));  margin-bottom: calc(3.6 * var(--fit-desktop)); }
 .donation-list { font-size: calc(2.02 * var(--fit-desktop)); }
 .donation-volunteers { top: calc(15.80 * var(--fit-desktop)); height: calc(29.75 * var(--fit-desktop)); }
 .donation-children { top: calc(20.60 * var(--fit-desktop)); height: calc(35.38 * var(--fit-desktop)); }
@@ -282,7 +282,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #425d72; outline-offs
   .donation-title { top: 12%; left: 6.95%; font-size: clamp(29px, 7.5vw, 61px); white-space: nowrap; }
   .donation-info { top: 24%; left: 8.5%; }
   .donation-amount { font-size: clamp(38px, 8vw, 64px); margin: 0 0 8px; }
-  .donation-question { font-size: clamp(15px, 3.5vw, 27px); margin: 0 0 12px; width: 80%; margin-bottom: 50px;}
+  .donation-question { font-size: clamp(14px, 3.65vw, 28px); line-height: 1.28;  margin: 0 0 12px; width: 80%; margin-bottom: 50px;}
   .donation-list { font-size: clamp(19px, 4.2vw, 33px); line-height: 1.2; padding-left: 1.4em; }
   .donation-volunteers { top: 69%; left: 0; width: 47%; height: 22%; }
   .donation-children { top: 51%; left: 50%; width: 50%; height: 29%; object-position: left center; }
