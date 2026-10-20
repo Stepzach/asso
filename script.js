@@ -55,6 +55,26 @@
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => { if (entry.isIntersecting) markActive(entry.target.id); });
     }, { threshold: 0.6 });
+   
     sections.forEach(section => observer.observe(section));
+  }
+
+  // Swap outdoors and parcels images on mobile only
+  const outdoors = document.querySelector('.outdoors-photo');
+  const parcels = document.querySelector('.parcels-photo');
+
+  if (outdoors && parcels) {
+    const outdoorsSrc = outdoors.getAttribute('src');
+    const parcelsSrc = parcels.getAttribute('src');
+
+    const mobile = window.matchMedia('(max-width: 850px)');
+
+    const updateImages = () => {
+      outdoors.setAttribute('src', mobile.matches ? parcelsSrc : outdoorsSrc);
+      parcels.setAttribute('src', mobile.matches ? outdoorsSrc : parcelsSrc);
+    };
+
+    updateImages();
+    mobile.addEventListener('change', updateImages);
   }
 })();
