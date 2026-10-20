@@ -45,6 +45,24 @@
 
   const sections = [...document.querySelectorAll('main > section[id]')];
   const allNavLinks = [...document.querySelectorAll('nav a[href^="#"]')];
+
+  // Scroll to sections without changing the URL
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', (event) => {
+    const id = link.getAttribute('href').slice(1);
+    const target = document.getElementById(id);
+
+    if (!target) return;
+
+    event.preventDefault();
+
+    target.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  });
+});
+  
   const markActive = (id) => allNavLinks.forEach(link => {
     if (link.hash === `#${id}`) link.setAttribute('aria-current', 'page');
     else link.removeAttribute('aria-current');
