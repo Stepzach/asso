@@ -441,3 +441,50 @@ a:focus-visible, button:focus-visible { outline: 2px solid #425d72; outline-offs
     font-size: clamp(19px, 4.5vw, 34px);
   }
 }
+
+
+/* Mobile menu — donation section at bottom */
+@media (max-width: 850px) {
+
+  .mobile-nav:not([hidden]) {
+    justify-content: flex-start;
+  }
+
+  /* Keep navigation links vertically centered */
+  .mobile-nav-links {
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  /* Donation section at the bottom */
+  .mobile-support {
+    flex: 0 0 auto;
+    width: 100%;
+    border-top: 1px solid #e9e9e9;
+    padding-top: 18px;
+    margin-top: 24px;
+    text-align: left;
+  }
+
+  /* Main HelloAsso link */
+  .mobile-nav .mobile-support a {
+    display: inline;
+    width: auto;
+    padding: 0;
+    border: 0;
+    color: #171717;
+    font: 600 clamp(15px, 3.3vw, 21px)/1.35 var(--sans);
+    letter-spacing: normal;
+   
+    text-underline-offset: 3px;
+  }
+
+  /* Smaller thank-you message */
+  .mobile-support p {
+    margin: 10px 0 0;
+    color: #666;
+    font: 400 clamp(12px, 2.8vw, 15px)/1.5 var(--sans);
+  }
+}
+
