@@ -520,11 +520,16 @@ a:focus-visible, button:focus-visible { outline: 2px solid #425d72; outline-offs
             display: block;
         position: absolute;
         top: 67%;
-        left: 0%;
+        left: 4%;
         width: 38%;
         height: 18%;
         object-fit: cover;
         object-position: 31% 50%;
   }
 
+}
+@media (hover: none) and (pointer: coarse) {
+  a, button {
+    -webkit-tap-highlight-color: transparent;
+  }
 }
