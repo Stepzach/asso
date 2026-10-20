@@ -533,3 +533,17 @@ a:focus-visible, button:focus-visible { outline: 2px solid #425d72; outline-offs
     -webkit-tap-highlight-color: transparent;
   }
 }
+
+/* Cover the space below the mobile menu when browser bars collapse */
+@media (max-width: 850px) {
+  body.menu-open::before {
+    content: "";
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 99;
+  }
+}
