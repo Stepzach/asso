@@ -67,7 +67,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #425d72; outline-offs
 .projects-title { position: absolute; left: 5.19%; top: 7.95vw; }
 .projects-description { position: absolute; top: 15.65vw; left: 5.34%; width: 37.7%; font-size: 1.85vw; line-height: 1.44; margin: 0; }
 .projects-list { position: absolute; top: 28.93vw; left: 5.65%; margin: 0; padding-left: 2.75vw; font-size: 1.85vw; line-height: 1.4; }
-.projects-list li { padding-left: .15vw; margin-bottom: 2.16vw; }
+.projects-list li { padding-left: .15vw; margin-bottom: 2.16vw;     font-weight: 300;     width: 46%; }
 .projects-main-photo { position: absolute; top: 17.32vw; left: 47.71%; width: 52.29%; height: 39.26vw; }
 .projects-small-photo { position: absolute; top: 37.82vw; left: 27.28%; width: 19.15%; height: 25.53vw; }
 .projects-registration { position: absolute; top: 58.95vw; right: 2.8%; display: flex; flex-direction: column; text-align: right; gap: .5vw; }
@@ -78,7 +78,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #425d72; outline-offs
 .actions-title { position: absolute; left: 5.19%; top: 7.95vw; }
 .action-entry { position: absolute; left: 5.48%; width: 40.5%; }
 .action-entry h3 { margin: 0 0 1.75vw; font-size: 3.19vw; }
-.action-entry p { margin: 0; font-size: 1.85vw; line-height: 1.45; }
+.action-entry p { margin: 0; font-size: 1.85vw; line-height: 1.47; font-weight: 300; }
 .entry-meals { top: 16.9vw; }
 .entry-school { top: 32.43vw; }
 .entry-fun { top: 48.45vw; }
@@ -95,14 +95,21 @@ a:focus-visible, button:focus-visible { outline: 2px solid #425d72; outline-offs
 .trip-route p { position: absolute; top: 56.15vw; left: 5.4%; width: 13.2%; font-size: 1.6vw; line-height: 1.2; }
 .trip-photo { position: absolute; top: 15.53vw; left: 40%; width: 60%; height: 36.56vw; }
 .trip-map-frame { position: absolute; top: 37.45vw; left: 19.6%; width: 19.6%; height: 20.62vw; overflow: hidden; }
-.trip-map { position: absolute; top: -3.11vw; right: -5.38vw; width: 39.83vw; height: 39.31vw; max-width: none; object-fit: cover; }
+.trip-map {     position: absolute;
+    top: -3.11vw;
+    right: -5.38vw;
+    width: 17.83vw;
+    height: 39.31vw;
+    max-width: none;
+    object-fit: cover;
+    object-position: -220px -60px; }
 .trip-more { position: absolute; top: 59.2vw; right: 2.9%; font-size: 1.6vw; }
 
 /* 05 — Donations */
 .donation-title { position: absolute; top: 8.22vw; left: 5.03%; margin: 0; font-size: 4.2vw; }
 .donation-info { position: absolute; top: 20.32vw; left: 5.28%; }
 .donation-amount { margin: 0 0 3.5vw; font-size: 4.88vw; line-height: 1; }
-.donation-question { font-size: 1.6vw; margin: 0 0 3.6vw; }
+.donation-question { font-size: 1.6vw; margin: 0 0 3.6vw; width: 40%; }
 .donation-list { font-size: 2.02vw; line-height: 1.19; padding-left: 2.4vw; margin: 0; }
 .donation-list li { padding-left: .3vw; }
 .donation-volunteers { position: absolute; top: 15.80vw; left: 30.34%; width: 21.60%; height: 29.75vw; }
@@ -145,7 +152,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #425d72; outline-offs
 .section-heading { font-size: calc(2.857 * var(--fit-desktop)); }
 .projects-title, .actions-title, .sejours-title, .contact-title { top: calc(7.95 * var(--fit-desktop)); }
 .projects-description { top: calc(15.65 * var(--fit-desktop)); font-size: calc(1.85 * var(--fit-desktop)); }
-.projects-list { top: calc(28.93 * var(--fit-desktop)); font-size: calc(1.85 * var(--fit-desktop)); }
+.projects-list { top: calc(37.93 * var(--fit-desktop));    font-size: calc(1.68 * var(--fit-desktop));}
 .projects-list li { margin-bottom: calc(2.16 * var(--fit-desktop)); }
 .projects-main-photo { top: calc(17.32 * var(--fit-desktop)); height: calc(39.26 * var(--fit-desktop)); }
 .projects-small-photo { top: calc(37.82 * var(--fit-desktop)); height: calc(25.53 * var(--fit-desktop)); }
@@ -153,7 +160,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #425d72; outline-offs
 .projects-registration span { font-size: calc(2.02 * var(--fit-desktop)); }
 .projects-registration small { font-size: calc(1.09 * var(--fit-desktop)); }
 .action-entry h3 { font-size: calc(3.19 * var(--fit-desktop)); margin-bottom: calc(1.75 * var(--fit-desktop)); }
-.action-entry p { font-size: calc(1.85 * var(--fit-desktop)); }
+.action-entry p { font-size: calc(1.68 * var(--fit-desktop)); }
 .entry-meals { top: calc(16.9 * var(--fit-desktop)); }
 .entry-school { top: calc(32.43 * var(--fit-desktop)); }
 .entry-fun { top: calc(48.45 * var(--fit-desktop)); }
@@ -252,7 +259,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #425d72; outline-offs
   .actions-title { top: 13%; left: 6.95%; width: 90%; }
   .action-entry { position: static; }
   .action-entry p { display: none; }
-  .action-entry h3 { position: absolute; margin: 0; font-size: clamp(24px, 6vw, 47px); line-height: .94; }
+  .action-entry h3 { position: absolute; margin: 0; font-size: clamp(24px, 6vw, 47px); line-height: 0.7;}
   .entry-meals h3 { top: 32%; left: 69.5%; width: 28%; }
   .entry-school h3 { top: 59%; left: 8%; width: 39%; text-align: right; }
   .entry-fun h3 { top: 79%; left: 48.45%; width: 49%; }
@@ -266,7 +273,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #425d72; outline-offs
   .trip-duration, .trip-more { display: none; }
   .trip-intro { top: 25%; left: 6.95%; width: 85%; font-size: clamp(14px, 3.65vw, 28px); line-height: 1.28; }
   .trip-photo { top: 43%; left: 14.53%; width: 85.47%; height: 29%; }
-  .trip-map-frame { top: 74%; left: 3%; width: 43%; height: 22%; overflow: hidden; }
+  .trip-map-frame { top: 74%; left: 3%; width: 43%; height: 22%; overflow: hidden;  }
   .trip-map { inset: 0; width: 100%; height: 100%; max-width: none; object-fit: contain; scale: 2.5; }
   .trip-route h3 { top: 75%; left: 51%; width: 46%; font-size: clamp(26px, 6vw, 46px); line-height: .95; }
   .trip-route p { top: 86%; left: 51%; width: 43%; margin: 0; font-size: clamp(13px, 3.4vw, 26px); line-height: 1.17; }
@@ -275,7 +282,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #425d72; outline-offs
   .donation-title { top: 12%; left: 6.95%; font-size: clamp(29px, 7.5vw, 61px); white-space: nowrap; }
   .donation-info { top: 24%; left: 8.5%; }
   .donation-amount { font-size: clamp(38px, 8vw, 64px); margin: 0 0 8px; }
-  .donation-question { font-size: clamp(15px, 3.5vw, 27px); margin: 0 0 12px; }
+  .donation-question { font-size: clamp(15px, 3.5vw, 27px); margin: 0 0 12px; width: 80%; margin-bottom: 50px;}
   .donation-list { font-size: clamp(19px, 4.2vw, 33px); line-height: 1.2; padding-left: 1.4em; }
   .donation-volunteers { top: 69%; left: 0; width: 47%; height: 22%; }
   .donation-children { top: 51%; left: 50%; width: 50%; height: 29%; object-position: left center; }
