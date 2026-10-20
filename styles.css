@@ -51,7 +51,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #425d72; outline-offs
 
 /* 01 — Home */
 .home-title { position: absolute; top: 11.4vw; left: 5.2%; margin: 0; font-size: 3.7vw; line-height: 1.24; letter-spacing: -.04em; font-weight: 400; }
-.home-subtitle { position: absolute; top: 28.9vw; left: 5.34%; width: 31%; margin: 0; font-size: 2.35vw; line-height: 1.36; letter-spacing: -.018em; }
+.home-subtitle { position: absolute; top: 25.9vw; left: 5.34%; width: 31%; margin: 0; font-size: 2.35vw; line-height: 1.36; letter-spacing: -.018em; }
 .flag { display: inline-block; font-family: 'Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji',sans-serif; vertical-align: -.02em; white-space: nowrap; }
 .home-description { position: absolute; top: 40.88vw; left: 5.34%; width: 29%; margin: 0; font-size: 1.68vw; line-height: 1.47; font-weight: 300; }
 .home-description strong { font-weight: 500; }
