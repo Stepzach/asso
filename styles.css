@@ -489,4 +489,38 @@ a:focus-visible, button:focus-visible { outline: 2px solid #425d72; outline-offs
     font: 400 clamp(12px, 4vw, 15px)/1.5 var(--sans);
   }
 }
+/* Show the smaller projects photo on mobile */
+@media (max-width: 850px) {
 
+  .projects-small-photo {
+    display: block;
+    position: absolute;
+    top: 78%;
+    left: 12%;
+    width: 25%;
+    height: 13%;
+    object-fit: cover;
+  }
+
+}
+
+/* Hide the additional contact team photo on desktop */
+.contact-team-photo {
+  display: none;
+}
+
+/* Show it below contact-support on mobile */
+@media (max-width: 850px) {
+
+  .contact-team-photo {
+    display: block;
+    position: absolute;
+    top: 69%;
+    left: 6.95%;
+    width: 28%;
+    height: 13%;
+    object-fit: cover;
+    object-position: 31% 50%;
+  }
+
+}
