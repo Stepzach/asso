@@ -298,7 +298,11 @@ a:focus-visible, button:focus-visible { outline: 2px solid #425d72; outline-offs
   .contact-support { top: 53%; left: 6.95%; font-size: clamp(17px, 4.2vw, 32px); line-height: 1.20; }
   .contact-support p { margin: 0 0 12px; }
   .contact-meals-photo { display: none; }
-  .contact-help-photo { top: 53%; left: 51%; width: 42%; height: 29%; }
+  .contact-help-photo {         top: 40%;
+        right: 4%;
+        left: auto;
+        width: 50%;
+        height: 37%; }
   .site-footer {
     left: 6.1%; right: 6.1%; bottom: 3.2%; flex-direction: column;
     justify-content: flex-start; gap: 17px; padding-top: 10px;
@@ -494,12 +498,12 @@ a:focus-visible, button:focus-visible { outline: 2px solid #425d72; outline-offs
 
   .projects-small-photo {
     display: block;
-    position: absolute;
-    top: 78%;
-    left: 12%;
-    width: 25%;
-    height: 13%;
-    object-fit: cover;
+        position: absolute;
+        top: 78%;
+        left: 4%;
+        width: 49%;
+        height: 17%;
+        object-fit: cover;
   }
 
 }
@@ -513,14 +517,14 @@ a:focus-visible, button:focus-visible { outline: 2px solid #425d72; outline-offs
 @media (max-width: 850px) {
 
   .contact-team-photo {
-    display: block;
-    position: absolute;
-    top: 69%;
-    left: 6.95%;
-    width: 28%;
-    height: 13%;
-    object-fit: cover;
-    object-position: 31% 50%;
+            display: block;
+        position: absolute;
+        top: 67%;
+        left: 0%;
+        width: 38%;
+        height: 18%;
+        object-fit: cover;
+        object-position: 31% 50%;
   }
 
 }
